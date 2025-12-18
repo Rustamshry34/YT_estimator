@@ -27,6 +27,18 @@ from kivy.animation import Animation
 from kivy.uix.widget import Widget
 from kivy.graphics.context_instructions import Color
 from kivy.graphics.vertex_instructions import Line, RoundedRectangle
+
+
+# Define custom components to make PyLance aware of them
+class ModernTextInput(TextInput):
+    """Modern styled TextInput widget"""
+    pass
+
+class ModernButton(Button):
+    """Modern styled Button widget"""
+    pass
+
+
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from transformers import pipeline
